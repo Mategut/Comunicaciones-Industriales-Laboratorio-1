@@ -6,7 +6,8 @@ El proyecto incluye tanto el documento en LaTeX con formato IEEE como los progra
 ---
 
 ##  Comunicación UART
-
+En este punto se estableció una comunicación serie asíncrona entre Arduino y Raspberry Pi Pico usando UART.  
+El Arduino envía bytes con y sin error de paridad, mientras que la Raspberry Pi Pico verifica los datos recibidos y enciende un **LED verde** si la transmisión fue correcta o un **LED blanco** si hubo error.
 En los programas presentados, tanto en Arduino como en la Raspberry Pi Pico, se observa un correcto funcionamiento básico de envío y verificación de datos UART. Ambos cumplen con su propósito, pero existen oportunidades de mejora:
 
 - Arduino
@@ -23,7 +24,8 @@ En los programas presentados, tanto en Arduino como en la Raspberry Pi Pico, se 
 ---
 
 ## Comunicación SPI
-
+En esta práctica se utilizó SPI, donde la Raspberry Pi Pico actuó como maestro y el Arduino como esclavo.  
+El maestro envía comandos para encender y apagar un LED en el Arduino, y el esclavo responde con un código de confirmación. Los resultados se visualizaron tanto en consola como en el montaje físico.
 En la implementación de comunicación SPI entre la Raspberry Pi Pico (maestro) y el Arduino (esclavo) se logra un intercambio funcional de comandos para encender y apagar un LED, con confirmación en consola. Mejoras posibles:
 
 - Raspberry Pi Pico
@@ -39,7 +41,8 @@ En la implementación de comunicación SPI entre la Raspberry Pi Pico (maestro) 
 ---
 
 ## Comunicación I²C
-
+En este ejercicio se implementó I²C para transmitir desde Arduino (esclavo) el valor de un potenciómetro hacia la Raspberry Pi Pico (maestro).  
+El valor leído se redujo a 3 bits y se mostró en tres LEDs conectados a la Pi, encendiéndose en función del nivel del potenciómetro. También se imprimieron los datos en la consola.
 En este ejercicio se establece comunicación I²C entre Arduino (esclavo) y Raspberry Pi Pico (maestro) para leer un potenciómetro y representar sus 3 bits más significativos en LEDs.
 
 - Arduino
