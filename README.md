@@ -1,6 +1,6 @@
 # Laboratorio 1. Comunicación Arduino – Raspberry Pi Pico
 
-Este repositorio contiene el informe y el código fuente desarrollado en el laboratorio de comunicación entre Arduino Uno y Raspberry Pi Pico mediante tres protocolos clásicos: **UART, SPI e I²C**.  
+Este repositorio contiene el informe y el código fuente desarrollado en el laboratorio de comunicación entre Arduino Uno y Raspberry Pi Pico mediante tres protocolos clásicos: UART, SPI e I²C.  
 El proyecto incluye tanto el documento en LaTeX con formato IEEE como los programas en Arduino y Raspberry Pi Pico, junto con imágenes de resultados experimentales.
 
 ---
